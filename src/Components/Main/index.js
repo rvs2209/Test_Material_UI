@@ -1,17 +1,19 @@
 import React from "react";
 import { Grid, Paper } from "material-ui";
+import LeftPane from "./LeftPane";
+import RightPane from "./RightPane";
 
+const style = {
+  Paper: { padding: 20, marginTop: 10, marginBottom: 10 }
+};
 export default props => (
   <div>
     <Grid container spacing={8}>
-      <Grid item xs>
-        <Paper>Panel 1</Paper>
+      <Grid item xs={3}>
+        <LeftPane style={style} />
       </Grid>
       <Grid item xs>
-        <Paper>Panel 2</Paper>
-      </Grid>
-      <Grid item xs>
-        <Paper>Panel 3</Paper>
+        <RightPane style={style} />
       </Grid>
     </Grid>
   </div>
