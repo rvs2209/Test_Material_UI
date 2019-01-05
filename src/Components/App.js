@@ -27,15 +27,25 @@ export default class App extends Component {
     const exercises = this.getExercisesByMuscle();
     return (
       <Fragment>
-        <Grid container direction="row">
-          <Grid item xs={9}>
-            <Header title="Login Screen" />
-          </Grid>
-          <Grid item xs={9}>
-            <Main exercises={exercises} />
-          </Grid>
-          <Grid item xs={9}>
-            <Footer labels={muscles} />
+        <Grid
+          container
+          direction="row"
+          alignItems="center"
+          justify="center"
+          xs={12}
+        >
+          <Grid item xs={8}>
+            <Grid container direction="row">
+              <Grid item xs={12}>
+                <Header title="Login Screen" />
+              </Grid>
+              <Grid item xs={12}>
+                <Main exercises={exercises} />
+              </Grid>
+              <Grid item xs={12}>
+                <Footer labels={muscles} />
+              </Grid>
+            </Grid>
           </Grid>
         </Grid>
       </Fragment>
