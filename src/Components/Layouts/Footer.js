@@ -6,9 +6,9 @@ import { Tab } from "material-ui/Tabs";
 export default props => (
   <Paper>
     <Tabs value={1} indicatorColor="primary" textColor="primary" centered>
-      <Tab label="Item One" />
-      <Tab label="Item Two" />
-      <Tab label="Item Three" />
+      {props.items.map(elem => (
+        <Tab label={elem} />
+      ))}
     </Tabs>
   </Paper>
 );

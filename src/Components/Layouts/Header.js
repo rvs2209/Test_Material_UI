@@ -8,7 +8,7 @@ export default props => (
     <AppBar position="static">
       <Toolbar>
         <Typography component="h2" variant="headline" color="inherit">
-          Header title - coming from typography
+          {props.title}
         </Typography>
       </Toolbar>
     </AppBar>

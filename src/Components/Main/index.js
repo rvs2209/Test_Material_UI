@@ -3,14 +3,14 @@ import { Grid, Paper } from "material-ui";
 
 export default props => (
   <div>
-    <Grid container xs>
-      <Grid item xs={12}>
+    <Grid container spacing={8}>
+      <Grid item xs>
         <Paper>Panel 1</Paper>
       </Grid>
-      <Grid item xs={12} sm={6}>
+      <Grid item xs>
         <Paper>Panel 2</Paper>
       </Grid>
-      <Grid item xs={12} sm={6}>
+      <Grid item xs>
         <Paper>Panel 3</Paper>
       </Grid>
     </Grid>
