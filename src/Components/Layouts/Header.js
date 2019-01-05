@@ -1,14 +1,14 @@
 import React, { Component, Fragment } from "react";
 // import AppBar from 'material-ui/AppBar'
 // import Toolbar from 'material-ui/Toolbar'
-import { AppBar, Toolbar, Typography } from "material-ui";
+import { AppBar, Toolbar, Typography, Grid } from "material-ui";
 
-export default props => (
+export default ({ title }) => (
   <Fragment>
     <AppBar position="static">
       <Toolbar>
         <Typography component="h2" variant="headline" color="inherit">
-          {props.title}
+          {title}
         </Typography>
       </Toolbar>
     </AppBar>

@@ -6,11 +6,11 @@ import RightPane from "./RightPane";
 const style = {
   Paper: { padding: 20, marginTop: 10, marginBottom: 10 }
 };
-export default props => (
+export default ({ exercises }) => (
   <div>
     <Grid container spacing={8}>
-      <Grid item xs={3}>
-        <LeftPane style={style} />
+      <Grid item xs={4}>
+        <LeftPane style={style} data={exercises} />
       </Grid>
       <Grid item xs>
         <RightPane style={style} />
